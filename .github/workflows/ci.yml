@@ -1,14 +1,14 @@
 on:
-    push:
-        branches:
-            - main
+  push:
+    branches:
+      - main
 
 jobs:
-    hello:
-        name: My first job
-        runs-on: ubunto-latest
-        steps:
-            - name: My first job
-              run: echo "Hello World!"
-            - name: My second step
-              run: mkdir -z test
+  hello:
+    name: My first job
+    runs-on: ubunto-latest
+    steps:
+      - name: My first job
+        run: echo "Hello World!"
+      - name: My second step
+        run: mkdir -z test
