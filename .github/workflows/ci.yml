@@ -1,0 +1,24 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello:
+    name: My first job
+    runs-on: ubunto-latest
+    steps:
+      - name: My first job
+        run: echo "Hello World!"
+      - name: My second step
+        run: mkdir -z test
+        
+  # test:
+  #   name: Run tests
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - name: Install package
+  #       run: pip install .[test]
+  #     - name: Run Pytest
+  #       run: python -m pytest -v
